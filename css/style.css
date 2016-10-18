@@ -1,0 +1,67 @@
+@keyframes heart {
+  0% { background-position: 100% 0; }
+  100% { background-position: 100% -160px; }
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  color: #444444;
+  
+  margin: 50px auto 100px auto;
+  max-width: 800px;
+  
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 50px 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+div.image {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+div.heart {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: white;
+}
+
+div.heart div {
+  background-image: url(../images/heart.svg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+
+  line-height: 28px;
+  height: 30px;
+  text-align: right;
+  
+  cursor: pointer;
+  
+  padding: 0 45px 0 0;
+  transition: background-position 0.15s steps(5);
+}
+
+div.heart div.liked {
+  background-position: 100% -200px;
+  font-weight: 700;
+}
