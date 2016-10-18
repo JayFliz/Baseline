@@ -14,7 +14,7 @@
     </header>
 
     <section>
-      
+      <div id="hello"></div>
     </section>
 
     <script src = "js/react.js"></script>
@@ -26,24 +26,24 @@
       // add a React component
       // titled variable
       //
-      var Heart = React.createClass({
-
-        getInitialState(){
-          
-        },
+      var HelloWorld = React.createClass({
 
         render(){
           
 
           return (
             <div>
-              "Hello World"
+              <h2>Hello World</h2>
             </div>
           )
         }
       })
+      
+      var helloDiv = document.getElementById("hello")
 
-     
+      ReactDOM.render(
+          <HelloWorld />, helloDiv
+        )
 
     </script>
 
